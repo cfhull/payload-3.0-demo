@@ -4,3 +4,10 @@
   PAYLOAD_SECRET = "Payload secret, used to encrypt JWT tokens"
   MONGODB_URI = "Define your database connection string. If using MongoDB, define the connection string here:"
   POSTGRES_URI = "Alternatively, define the PostgreSQL connection string here:"
+
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NPM_FLAGS = "--unsafe-perm"
