@@ -6,8 +6,12 @@
   POSTGRES_URI = "Alternatively, define the PostgreSQL connection string here:"
 
 [build]
-  command = "pnpm build"
+  command = "npm run build"
   publish = ".next"
 
 [build.environment]
   NPM_FLAGS = "--unsafe-perm"
+
+[functions]
+  external_node_modules = ["sharp"]
+  included_files = ["node_modules/sharp/**/*"]
