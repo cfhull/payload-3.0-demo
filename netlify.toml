@@ -11,5 +11,3 @@
 
 [build.environment]
   NPM_FLAGS = "--unsafe-perm"
-  NPM_CONFIG_PLATFORM = "linux"
-  NPM_CONFIG_ARCH = "x64"

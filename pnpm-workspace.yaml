@@ -1,0 +1,7 @@
+packages:
+  - ./
+supportedArchitectures:
+  os:
+    - current
+  cpu:
+    - current
